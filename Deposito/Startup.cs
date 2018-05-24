@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Deposito.Models;
@@ -29,6 +29,7 @@ namespace Deposito
             services.AddDbContext<ProductoContext>(opt => opt.UseInMemoryDatabase());
 
             services.AddMvc();
+			//probando
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
